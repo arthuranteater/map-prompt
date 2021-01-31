@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Map!</title>
+  </head>
+  <body>
+    <h1>I Map It Out!</h1>
+    <a href="/wedo.html">Let's Map It Together</a>
+    <h4>My Favorite Books</h4>
+    <div>
+      <ul id="list">
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Total: $</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const authors = ["Sara Gruen", "Michael Cox", "Ken Follett"];
+
+    const books = [
+      { name: "Water for Elephants: A Novel", price: 12.58 },
+      { name: "The Meaning of Night: A Confession", price: 16.95 },
+      { name: "The Pillars of the Earth: A Novel", price: 8.24 },
+    ];
+
+    const inventory = { water: 10, meaning: 20, pillars: 30 };
+
+    //Review
+    //Using for Loop log the authors and the index
+
+    for (let i = 0; i < authors.length; i++) {}
+
+    //Using map log the authors and the index
+
+    authors.map((author, i) => {});
+
+    //Using map inside a function return an array of prices and add 1 dollar to each price
+    function AddDollar(arr) {}
+
+    //Uncomment out the function to log the result
+
+    // console.log(AddDollar(books));
+
+    //Stretch using map inside a function return an array of objects with the same info from the books array, adding 3 dollars to each price
+
+    function AddThreeDollars(arr) {}
+    //Uncomment out the function to log the result
+
+    //  console.log(AddThreeDollars(books))
+
+    //Stretch: using map with inventory object log the object keys
+  </script>
+</html>

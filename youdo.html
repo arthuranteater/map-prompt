@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum Groceries</title>
+  </head>
+  <body>
+    <h1>Map It Out!</h1>
+    <h4>Your Groceries</h4>
+    <div>
+      <ul id="list">
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Some Item, $</li>
+        <li>Total: $</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const customers = ["John Doe", "Jack Doe", "James Doe"];
+
+    const store = [
+      { number: 1313, name: "apples", price: 3 },
+      { number: 4242, name: "bananas", price: 2 },
+      { number: 8181, name: "rice", price: 4 },
+    ];
+
+    const inventory = { apples: 10, bananas: 20, rice: 30 };
+
+    const missing = [];
+
+    const orders = [
+      {
+        ticket: 1,
+        customer: "John",
+        products: [
+          { number: 1313, amount: 2 },
+          { number: 4242, amount: 4 },
+        ],
+      },
+      {
+        ticket: 2,
+        customer: "Jack",
+        products: [
+          { number: 4242, amount: 3 },
+          { number: 8181, amount: 5 },
+        ],
+      },
+    ];
+
+    //-------------------------customers--------------------------------------
+    //Using map, console log each item in the customers array using map
+    //If struggling think of how-to with for loop first
+
+    //--------------------------store------------------------------------------------------------
+    //Using map, create a function that returns an array of the prices from the store array, adding one dollar to each price.
+    //If struggling think of how-to with for loop first
+
+    function addDollar(arr) {}
+
+    //Uncomment out the following to run the function
+
+    //console.log(addDollar(store))
+
+    //>>>>>>>>>>>>>>>>>>>>>>>BONUS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //Using map, create a function that returns an array of objects with the same info as the store array, adding 2 dollars to each price
+
+    function updStore(arr) {
+      return arr.map((item) => {
+        return {
+          ...item,
+          price: item.price + 1,
+        };
+      });
+    }
+
+    //Uncomment out the following to run the function
+
+    console.log("upd store", updStore(store));
+
+    //-------------------------sums---------------------------------------------------------------------
+
+    //1) Using map, create a function that returns the sum the prices from the store array using map
+    //If struggling think of how-to with for loop first
+
+    function sum(arr) {
+      let tot = 0;
+      return arr.map((item) => (tot += item.price))[arr.length - 1];
+    }
+
+    //Uncomment out the following to run the function
+
+    // console.log("sum store", sum(store));
+
+    //-------------------------inventory--------------------------------------
+    //2) Using map, console log each item in the inventory array
+
+    //3) Using map, console log each value in the inventory array
+  </script>
+</html>
