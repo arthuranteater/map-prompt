@@ -1,4 +1,6 @@
 
 JsBin: https://jsbin.com/joviden/edit?js,console
 
-CodePen: https://codepen.io/arthuranteater/pen/vYyNrRz
+JsFiddle: https://jsfiddle.net/arthuranteater/dr90c2zq/1/
+
+Repo: https://github.com/arthuranteater/map-prompt
